@@ -212,11 +212,11 @@ def get_sum_zero_pairs(numbers):
         [[-1, 1], [0, 0]]
     """
 
-    for num in numbers:
-        if num == - num:
+    # for num in numbers:
+    #     if num == - num:
 
 
-    return []
+    # return []
 
 
 def kids_game(names):
@@ -257,7 +257,16 @@ def kids_game(names):
     good solutions here will definitely require a dictionary.
     """
 
-    return []
+    names_game = []
+    indexes = range(len(names))
+
+    for word in names:
+        for i in indexes:
+            if word[i][-1] == word[i][1]:
+                names_game.append(word)
+                print names
+
+    return names
 
 
 #####################################################################
